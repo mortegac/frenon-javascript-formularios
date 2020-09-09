@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo de formulario</title>
+    <link 
+    href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.2/css/bulma.min.css" 
+    rel="stylesheet" >
+    <link href="./assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- FORMULARIO -->
+
+
+    <div id="form">
+        <div class="form-card">
+      
+          <div class="card-title">
+            <h3 class="title is-3 is-center">Ingreso de Usuarios</h3>
+          </div>
+      
+          <div class="content">
+            <form id="frm" method="POST" action="#">                
+      
+                <input id="name" type="text" name="name" placeholder="Nombre" required autofocus>
+                <input id="email" type="email" name="email" placeholder="Email"  autofocus>
+              
+                <span id="notification"></span>
+
+                <button type="submit" class="btn btn-primary">Crear usuario</button>
+            </form>
+
+            <!-- LISTA DE REGISTROS -->
+            <h5 class="title is-3">Listado de usuarios</h5>
+            <ul id="list"></ul>
+
+            <a href="#" onclick="handleClick()">
+                <ion-icon name="trash-outline"></ion-icon>
+                Usuario de Prueba
+            </a>
+            
+
+          </div>
+        </div>
+      </div>
+
+
+
+</body>
+<script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<script src='./assets/scripts.js'></script>
+</html>
